@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule} from '@angular/router'
-import { HttpClientModule} from '@angular/common/http'
-import { FormsModule} from '@angular/forms';
+import { RouterModule } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 //components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -37,15 +37,16 @@ import { TransferenciaComponent } from './components/transferencia/transferencia
     HttpClientModule, //Faz requests HTTP
     FormsModule, //Da suporte ao two way data biding
     RouterModule.forRoot([ //Suporte a rotas
-      {path: 'login', component: LoginComponent},
-      {path: 'home', component: HomeComponent},
-      {path: 'extrato', component: ExtratoComponent},
-      {path: 'transferencia', component: TransferenciaComponent},
-      {path:'', redirectTo: 'home' , pathMatch: 'full'},
-      {path:'**', redirectTo: 'home' , pathMatch: 'full'},
+      { path: 'login', component: LoginComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'extrato', component: ExtratoComponent },
+      { path: 'transferencia', component: TransferenciaComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' },
     ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

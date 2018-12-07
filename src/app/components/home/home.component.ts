@@ -8,11 +8,6 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  title = 'orange-bank';
-  description = 'login';
-  url = 'assets/images/logooficial.jpg';
-
-
   showImage: boolean = false
   showSaldo: boolean = false
   showExtrato: boolean = false
