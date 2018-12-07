@@ -37,6 +37,7 @@ import { TransferenciaComponent } from './components/transferencia/transferencia
     HttpClientModule, //Faz requests HTTP
     FormsModule, //Da suporte ao two way data biding
     RouterModule.forRoot([ //Suporte a rotas
+      {path: 'login', component: LoginComponent},
       {path: 'home', component: HomeComponent},
       {path: 'extrato', component: ExtratoComponent},
       {path: 'transferencia', component: TransferenciaComponent},
