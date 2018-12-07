@@ -1,0 +1,51 @@
+<div class="cards row">
+  <div class="cards-1 col-12 col-sm-6 col-md-4">
+    <div class="saldo">
+      <button class="btn btn-outline-warning" (click)='mostrarSaldo()'>{{showSaldo ? "OCULTAR" :"VER SALDO"}}</button>
+      <div class="mostrar-saldo" *ngIf=showSaldo></div>
+    </div>
+
+  </div>
+  <div class="cards-2 col-12 col-sm-6 col-md-4">
+    <div class="extrato">
+      <button class="btn btn-outline-warning" (click)='mostrarExtrato()'>{{showExtrato ? "OCULTAR" :"VER EXTRATO"}}</button>
+      <div class="mostrar-extrato" *ngIf=showExtrato></div>
+    </div>
+  </div>
+  <div class="cards-3 col-12 col-sm-6 col-md-4">
+    <div class="transferencia">
+      <button class="btn btn-outline-warning" (click)='mostrarTransferencia()'>{{showTranferencia ? "OCULTAR" :"VER
+        TRANSFERÊNCIA"}}</button>
+      <div class="mostrar-transferencia" *ngIf=showTranferencia></div>
+    </div>
+  </div>
+
+
+  <div class="cards-4 col-12 col-sm-6 col-md-4">
+    <div class="emprestimos">
+      <button class="btn btn-outline-warning" (click)='mostrarEmprestimo()'>{{showEmprestimo ? "OCULTAR" :"VER
+        EMPRESTIMOS"}}</button>
+      <div class="mostrar-emprestimo" *ngIf=showEmprestimo></div>
+    </div>
+  </div>
+  <div class="cards-5 col-12 col-sm-6 col-md-4">
+    <div class="poupanca">
+      <button class="btn btn-outline-warning" (click)='mostrarPoupanca()'>{{showPoupanca ? "OCULTAR" :"POUPANÇA"}}</button>
+      <div class="mostrar-poupanca" *ngIf=showPoupanca></div>
+      <div class="d-flex justify-content-center mt-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcUZNJBjUChB6TW46S37wOjyMABoZzCXAFDxb_akgKqVNfnJYKg"
+          style="height:80px" alt=""></div>
+    </div>
+  </div>
+  <div class="cards-6 col-12 col-sm-6 col-md-4">
+    <div class="investimentos">
+      <button class="btn btn-outline-warning" (click)='mostrarImagens()'>{{showImage ? "OCULTAR" :"VER INVESTIMENTOS"}}</button>
+      <div class="mostrar-investimentos" *ngIf=showImage> casa</div>
+      <div class="d-flex justify-content-center mt-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOFXpVLzECgN-kCfhfGJsWs-g8B6ldnws2T6I2G5uRvfC7valUQ"
+          style="height:89px" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+

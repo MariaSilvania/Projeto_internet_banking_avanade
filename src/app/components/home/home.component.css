@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;   
+    }
+    
+    .img-login{
+    height: 40px;
+    border-radius: 360px;
+    }
+    
+    .cards-1, .cards-2, .cards-3, .cards-4, .cards-5, .cards-6{
+    height: 250px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:'5px';
+    margin-top:20px;
+    }
+    
+    .button-serch-home {
+    border: none;    
+    background-color:#E5242E;
+    color: white;     
+    }
+    
+    .saldo, .extrato, .transferencia, .emprestimos, .poupanca, .investimentos{
+     background-color:white;
+     border: solid 1px beige;;
+     height: 230px;
+     width: 340px;  
+     border-radius: 5px;
+     padding: 10px;
+    /* box-shadow: 5px 6px #f0b15e; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+    0 5px 10px 0 rgba(0,0,0,.05);
+    }
+    
+    .mostrar-investimentos, 
+    .mostrar-saldo,
+    .mostrar-extrato,
+    .mostrar-transferencia,
+    .mostrar-emprestimo,
+    .mostrar-poupanca{
+     background-color:black;
+     opacity: 0.3;
+     height: 200px;
+     width: 320px; 
+     border-radius:2px;   
+    }
+    
+    .navbar-home{
+    background-color:rgb(233, 121, 17);
+    }
+    
+    button{
+    border: none;
+    color: black;    
+    }
+    
+    
+    
