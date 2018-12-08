@@ -1,7 +1,17 @@
+.container-form-transferencia{
+ display: flex;
+ justify-content:center;  
+ align-items: center; 
+ 
+ height: 500px;
+ /* width: 500px;    */
+}
+
 .salvar-contato,.transferencia {
 font-weight: bold;  
 color: gray;  
 }
+
 
 .cadastrados, 
 .outras-contas,
@@ -25,3 +35,4 @@ font-weight: bold;
 width: 300px;
 padding: 5px;
 }
+
