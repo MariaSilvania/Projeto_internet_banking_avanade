@@ -8,21 +8,26 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  showImage: boolean = false
+  showInvestimento: boolean = false
   showSaldo: boolean = false
   showExtrato: boolean = false
   showTranferencia: boolean = false
   showEmprestimo: boolean = false
   showPoupanca: boolean = false
-
+  showOcultarInvestimento: boolean = false
   constructor() { }
 
   ngOnInit() {
   }
 
-  mostrarImagens(teste) {
-    this.showImage = !this.showImage;
-    console.log(this.showImage)
+
+  ocultarImagInvestimento(investimento) {
+    this.showOcultarInvestimento = !this.showOcultarInvestimento;
+    console.log(this.showOcultarInvestimento)
+  }
+  mostrarInvestimento(investimento) {
+    this.showInvestimento = !this.showInvestimento;
+    console.log(this.showInvestimento)
   }
 
   mostrarSaldo(saldo) {

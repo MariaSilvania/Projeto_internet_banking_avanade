@@ -23,7 +23,14 @@
     <div class="transferencia">
       <button class="btn btn-light" (click)='mostrarTransferencia()'>{{showTranferencia ? "OCULTAR" :"VER
         TRANSFERÊNCIA"}}</button>
-      <div class="mostrar-transferencia" *ngIf=showTranferencia></div>
+      <div class="mostrar-transferencia" *ngIf=showTranferencia>
+        <p>teste</p>
+        <a [routerLink]="['/transferencia']"> <button class="fazer-transferência">FAZER TRANSFERÊNCIA</button></a>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5oQlU2EvZQuUYuheKPgbpqNC5j4KhTgrQWg1f8AUBOHRkYp_"
+          style="height:100px" alt=""></div>
+
     </div>
   </div>
 
@@ -32,21 +39,26 @@
       <button class="btn btn-light" (click)='mostrarEmprestimo()'>{{showEmprestimo ? "OCULTAR" :"VER
         EMPRESTIMOS"}}</button>
       <div class="mostrar-emprestimo" *ngIf=showEmprestimo></div>
+      <div class="d-flex justify-content-center mt-5">
+        <img src="https://dumielauxepices.net/sites/default/files/money-clipart-book-689278-5562946.png" style="height:80px"
+          alt=""></div>
     </div>
   </div>
   <div class="cards-5 col-12 col-sm-6 col-md-4">
     <div class="poupanca">
       <button class="btn btn-light" (click)='mostrarPoupanca()'>{{showPoupanca ? "OCULTAR" :"POUPANÇA"}}</button>
       <div class="mostrar-poupanca" *ngIf=showPoupanca></div>
-      <div class="d-flex justify-content-center mt-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcUZNJBjUChB6TW46S37wOjyMABoZzCXAFDxb_akgKqVNfnJYKg"
-          style="height:80px" alt=""></div>
+      <div class="d-flex justify-content-center mt-4">
+        <img src="https://img.clipartxtras.com/6fb940faca17aff7e17b372c702eb771_saving-money-clipart-black-and-white-clipartxtras-saving-money-clipart-black-and-white_588-599.png"
+          style="height:100px" alt=""></div>
     </div>
   </div>
   <div class="cards-6 col-12 col-sm-6 col-md-4">
     <div class="investimentos">
-      <button class="btn btn-light" (click)='mostrarImagens()'>{{showImage ? "OCULTAR" :"VER INVESTIMENTOS"}}</button>
-      <div class="mostrar-investimentos" *ngIf=showImage> casa</div>
+      <button class="btn btn-light" (click)='mostrarInvestimento()'>{{showInvestimento
+        ? "OCULTAR" :"VER
+        INVESTIMENTOS"}}</button>
+      <div class="mostrar-investimentos" *ngIf=showInvestimento> casa</div>
       <div class="d-flex justify-content-center mt-5">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOFXpVLzECgN-kCfhfGJsWs-g8B6ldnws2T6I2G5uRvfC7valUQ"
           style="height:89px" alt="">

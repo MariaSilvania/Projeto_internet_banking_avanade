@@ -1,49 +1,48 @@
 .cards-1, .cards-2, .cards-3, .cards-4, .cards-5, .cards-6{
-    height: 250px;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:'5px';
-    margin-top:20px;
-    }
+height: 250px;  
+display: flex;
+justify-content: center;
+align-items: center;
+padding:'5px';
+margin-top:20px;
+}
     
-    .button-serch-home {
-    border: none;    
-    background-color:#E5242E;
-    color: white;     
-    }
-    
-    .saldo, .extrato, .transferencia, .emprestimos, .poupanca, .investimentos{
-     background-color:white;
-     border: solid 1px beige;;
-     height: 230px;
-     width: 340px;  
-     border-radius: 5px;
-     padding: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+.saldo, .extrato, .transferencia, .emprestimos, .poupanca, .investimentos{
+background-color:white;
+border: solid 1px beige;;
+height: 230px;
+width: 340px;  
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
     0 5px 10px 0 rgba(0,0,0,.05);
-    }
+}
     
-    .mostrar-investimentos, 
-    .mostrar-saldo,
-    .mostrar-extrato,
-    .mostrar-transferencia,
-    .mostrar-emprestimo,
-    .mostrar-poupanca{
-     height: 200px;
-     width: 320px; 
-     border-radius:2px;   
-    }
+.mostrar-investimentos, 
+.mostrar-saldo,
+.mostrar-extrato,
+.mostrar-transferencia,
+.mostrar-emprestimo,
+.mostrar-poupanca{
+padding: 10px;
+border-radius:2px;   
+}
     
-    button{
-    border: none;
-    color: rgb(80, 78, 78);    
-    }
+button{
+border: none;
+color: rgb(80, 78, 78);    
+}
     
-    button:hover{
-    background-color: rgb(138, 131, 131);
-    color: white;  
-    border: none;  
-    }
-    
-    
+button:hover{
+background-color: rgb(138, 131, 131);
+color: white;  
+border: none;  
+}
+ 
+.fazer-transferência{
+background-color:gray;
+color: white;
+border-radius: 8px; 
+padding: 2px;
+}
+     

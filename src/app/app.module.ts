@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { ExtratoComponent } from './components/extrato/extrato.component';
 import { TransferenciaComponent } from './components/transferencia/transferencia.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { TransferenciaComponent } from './components/transferencia/transferencia
     HomeComponent,
     LoginComponent,
     ExtratoComponent,
-    TransferenciaComponent
+    TransferenciaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, //Instancia a aplicação no navegador
