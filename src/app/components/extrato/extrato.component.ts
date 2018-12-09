@@ -8,26 +8,17 @@ import { BancoService } from 'src/app/services/banco.service';
   styleUrls: ['./extrato.component.css']
 })
 export class ExtratoComponent implements OnInit {
-  showImage: boolean = false
-  totalTransações: number = 0 
 
-  cervejas: Ibanco[] = []
+  bancos: Ibanco[] = []
   constructor(private bancoService: BancoService) { }
 
   ngOnInit() {
     this.bancoService.getBancos()
       .then(dados => {
-        this.cervejas = dados
-        this.totalTransações = dados.length
+        this.bancos = dados
       })
       .catch(erro => {
         console.log(erro);
       })
-
-  }
-
-  mostrarImagens(){
-    this.showImage = !this.showImage
-  
   }
 }

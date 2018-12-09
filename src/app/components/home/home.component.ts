@@ -82,4 +82,7 @@ export class HomeComponent implements OnInit {
     this.showOcultarImgPoupanca = !this.showOcultarImgPoupanca;
     console.log(this.showOcultarImgPoupanca)
   }
+  saibaMais(){
+    alert("Em desenvolvimento")
+  }
 }

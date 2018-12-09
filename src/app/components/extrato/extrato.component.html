@@ -1,7 +1,7 @@
 <div class="container container_extrato">
   <h1 class="titulo">Extrato</h1>
   <table class="table table-striped" 
-  *ngIf="cervejas.length > 0; else nottable">
+  *ngIf="bancos.length > 0; else nottable">
   <thead>
     <tr>
       <th scope="col">Data Movimentação</th>
@@ -10,7 +10,7 @@
       <th scope="col">Valor</th>
   </thead>
   <tbody>
-    <tr *ngFor="let item of cervejas" >
+    <tr *ngFor="let item of bancos" >
       <th scope="row">{{ item.data | date:'dd/MM/yyyy'}}</th>
       <td>{{ item.doc }}</td>
       <td>{{ item.historico }}</td>
