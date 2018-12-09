@@ -7,10 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 //pipe
-import { FiltroCervejaPipe } from './pipes/filtro-cerveja.pipe';
 import { PadraoBrasileiroMoedaPipe } from './pipes/padrao-brasileiro-moeda.pipe';
 import { EspacoMoedaPipe } from './pipes/espaco-moeda.pipe';
-import { UnidadeMedidaPipe } from './pipes/unidade-medida.pipe';
 import { FormDebuggerComponent } from './components/form-debugger/form-debugger.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -23,9 +21,7 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     EspacoMoedaPipe,
-    UnidadeMedidaPipe,
     PadraoBrasileiroMoedaPipe,
-    FiltroCervejaPipe,
     NavbarComponent,
     FormDebuggerComponent,
     HomeComponent,

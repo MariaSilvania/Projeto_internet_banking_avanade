@@ -1,3 +1,24 @@
-<p>
-  extrato works!
-</p>
+<div class="container container_extrato">
+  <h1 class="titulo">Extrato</h1>
+  <table class="table table-striped" 
+  *ngIf="cervejas.length > 0; else nottable">
+  <thead>
+    <tr>
+      <th scope="col">Data Movimentação</th>
+      <th scope="col">NR. Doc.</th>
+      <th scope="col">Histórico</th>
+      <th scope="col">Valor</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of cervejas" >
+      <th scope="row">{{ item.data | date:'dd/MM/yyyy'}}</th>
+      <td>{{ item.doc }}</td>
+      <td>{{ item.historico }}</td>
+      <td>{{ item.valor| currency:'BRL':true:'1.2-2' | espacoMoeda }}</td>
+    </tr>       
+  </tbody>
+  </table>
+  <ng-template #nottable>
+  <h1 class="h1">Sem Histórico</h1>
+  </ng-template>
+</div>

@@ -15,7 +15,9 @@
     <div class="extrato">
       <button class="btn btn-light" (click)='mostrarExtrato()' (click)='ocultarImgExtrato()'>{{showExtrato ? "OCULTAR"
         :"VER EXTRATO"}}</button>
-      <div class="mostrar-extrato" *ngIf=showExtrato></div>
+      <div class="mostrar-extrato" *ngIf=showExtrato>
+       
+      </div>
       <div class="d-flex justify-content-center mt-4">
         <img src="https://png.pngtree.com/svg/20160912/statement_of_settlement_717840.png" style="height:80px" alt=""
           *ngIf=showOcultarExtrato>

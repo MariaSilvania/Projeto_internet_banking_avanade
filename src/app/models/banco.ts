@@ -1,4 +1,4 @@
-export interface ICerveja {
+export interface Ibanco {
     id: number
     nome: string
     familia: string
@@ -10,7 +10,7 @@ export interface ICerveja {
     unidade: string
 }
 
-export class Cerveja implements ICerveja {
+export class Cerveja implements Ibanco {
    constructor(
        public id: number,
        public nome: string,

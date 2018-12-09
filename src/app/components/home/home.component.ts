@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
   showPoupanca: boolean = false
   showOcultarImgPoupanca: boolean = true
 
-  constructor() { }
-
+  
   ngOnInit() {
+    
   }
 
   ocultarImagInvestimento(investimento) {
