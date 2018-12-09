@@ -4,21 +4,24 @@ height: 492px;
 
 .salvar-contato,.transferencia {
 font-weight: bold;  
-color: gray;  
 }
-.cadastrados, 
-.outras-contas,
+
 .instituição,
 .agencia,
-.conta{
+.conta,
+.identificao-transferencia,
+.valor-transferencia,
+.input-data {
 border: none;
-border-bottom: 2px solid #E97911;
+border-bottom: 2px solid gray;
+border-right: 2px solid  gray;
+border-left: 2px solid  gray;
 color: gray; 
 background-color: #F8F8F6;    
 }
 
 .instituição{
-width: 300px;
+width: 180px;
 }
 
 .conta, .agencia{
@@ -34,3 +37,17 @@ width: 300px;
 padding: 5px;
 }
 
+.input-data{
+width: 100px;    
+}
+.cadastrados, .outras-contas{
+background-color:gray; 
+color: white;
+border-radius: 4px;  
+font-weight: bold;
+padding: 5px;
+}
+
+.identificao-transferencia{
+width: 240px;    
+}
