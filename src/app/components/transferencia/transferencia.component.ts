@@ -12,4 +12,7 @@ export class TransferenciaComponent implements OnInit {
   ngOnInit() {
   }
 
+  salvarTransferencia(){
+    console.log("teste")
+  }
 }

@@ -15,8 +15,8 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-between">
-          <input class='instituição' type="text" placeholder="instituição">
-          <select>
+          <input id="instituicao" class='instituição' type="text" placeholder="instituição">
+          <select id="tipo_transacao">
             <option value="TED">TED p/mesma titularidade</option>
             <option value="DOC">DOC p/mesma titularidade</option>
             <option value="TED">TED titularidade diferente</option>
@@ -26,23 +26,23 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-between">
-          <input class='agencia' type="text" placeholder="agência">
-          <input class='conta ' type="text" placeholder="Conta - digito">
+          <input class='agencia' id="agengia" type="text" placeholder="agência">
+          <input class='conta ' id="conta" type="text" placeholder="Conta - digito">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class='valor-transferencia ' type="text" placeholder="Valor a ser transferido">
+          <input class='valor-transferencia' id="valor" type="text" placeholder="Valor a ser transferido">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class='identificao-transferencia ' type="text" placeholder="Identificação da transferência">
+          <input class='identificao-transferencia' id="identificao" type="text" placeholder="Identificação da transferência">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class="mr-2 " type="radio" name="transf-hoje" value="transf-hoje" checked> Tranferir hoje<br>
+          <input class="mr-2" id="data" type="radio" name="transf-hoje" value="transf-hoje" checked> Tranferir hoje<br>
         </div>
       </div>
       <div class="row">
@@ -54,18 +54,18 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <p><input class="mr-2" type="checkbox" name="salvar-conta">Deseja que esta transferência se repita
+          <p><input id="repetir_transf" class="mr-2" type="checkbox" name="salvar-conta">Deseja que esta transferência se repita
             automaticamente nos próximos meses?</p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 d-flex justify-content-start">
-          <p class="salvar-contato">Salvar contato <input type="checkbox" name="salvar-contato"></p>
+          <p class="salvar-contato">Salvar contato <input id="salvar_contato" type="checkbox" name="salvar-contato"></p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 d-flex justify-content-center">
-          <button class="button-continuar-transferencia">Continuar</button>
+          <button class="button-continuar-transferencia" (click)="salvarTransferencia()">Continuar</button>
         </div>
       </div>
     </div>
