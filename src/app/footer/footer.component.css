@@ -1,5 +1,4 @@
 .page-footer{
-    margin-top:120px; 
     background-color:rgb(233, 121, 17);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
                 0 5px 10px 0 rgba(0,0,0,.05);
@@ -7,3 +6,37 @@
  .link-footer{
   color: white;   
  }   
+
+ 
+/*   
+@media (max-width: 360px) 
+{
+  .page-footer
+   {
+   margin-top: 150px; 
+   }
+}
+
+@media (min-width: 362px) and (max-width: 376px) 
+{
+  .page-footer
+   {
+   margin-top: 200px; 
+   }
+}
+
+@media (min-width: 768px) and (max-width: 799px) 
+{
+  .page-footer
+   {
+   margin-top: 410px; 
+   }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) 
+{
+  .page-footer
+   {
+   margin-top: 665px; 
+   }
+} */
