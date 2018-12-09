@@ -1,0 +1,17 @@
+.contanier-espaco{
+height: 30px;    
+}
+.container-extrato{
+height:63vh;    
+background-color:white;
+border: solid 1px beige;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+    0 5px 10px 0 rgba(0,0,0,.05);
+}
+
+#extrato-title{
+font-weight: bold;  
+color: gray;     
+}

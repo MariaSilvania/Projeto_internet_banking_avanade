@@ -15,7 +15,13 @@
     <div class="extrato">
       <button class="btn btn-light" (click)='mostrarExtrato()' (click)='ocultarImgExtrato()'>{{showExtrato ? "OCULTAR"
         :"VER EXTRATO"}}</button>
-      <div class="mostrar-extrato" *ngIf=showExtrato></div>
+      <div class="mostrar-extrato" *ngIf=showExtrato>
+        <div class="button-extrato d-flex justify-content-center">
+          <button class="mr-1">10 DIAS</button>
+          <button class="mr-1">20 DIAS</button>
+          <button class="mr-1">OUTROS</button>
+        </div>
+      </div>
       <div class="d-flex justify-content-center mt-4">
         <img src="https://png.pngtree.com/svg/20160912/statement_of_settlement_717840.png" style="height:80px" alt=""
           *ngIf=showOcultarExtrato>
@@ -28,8 +34,8 @@
         ? "OCULTAR" :"VER
         TRANSFERÊNCIA"}}</button>
       <div class="mostrar-transferencia" *ngIf=showTranferencia>
-        <p>teste</p>
         <a [routerLink]="['/transferencia']"> <button class="fazer-transferência">FAZER TRANSFERÊNCIA</button></a>
+        <p>teste</p>
       </div>
       <div class="d-flex justify-content-center mt-3">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5oQlU2EvZQuUYuheKPgbpqNC5j4KhTgrQWg1f8AUBOHRkYp_"

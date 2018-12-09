@@ -1,18 +1,11 @@
 .container-form-transferencia{
- display: flex;
- justify-content:center;  
- align-items: center; 
- 
- height: 500px;
- /* width: 500px;    */
+height: 492px;
 }
 
 .salvar-contato,.transferencia {
 font-weight: bold;  
 color: gray;  
 }
-
-
 .cadastrados, 
 .outras-contas,
 .instituição,
@@ -24,9 +17,14 @@ color: gray;
 background-color: #F8F8F6;    
 }
 
-.conta{
- width: 120px;   
+.instituição{
+width: 300px;
 }
+
+.conta, .agencia{
+ width: 120px;     
+}
+
 .button-continuar-transferencia{
 background-color:#E97911; 
 color: white;
