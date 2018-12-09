@@ -23,7 +23,7 @@ let listaExtrato = [
 	{
 		"id": 2,
 		"data": "2018-12-01",
-		"doc": "000000",
+		"doc": "086776",
 		"historico": "DP DINH AG",
 		"valor": 190.00,
 		"tipo": "C"

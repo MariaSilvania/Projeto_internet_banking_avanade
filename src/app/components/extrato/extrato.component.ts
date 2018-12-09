@@ -19,9 +19,11 @@ export class ExtratoComponent implements OnInit {
         this.bancos = dados
         for(var i = 0; i < dados.length; i++){
           this.id = dados[i].id
-        
-        this.saldo = this.saldo + dados[this.id].valor
-        
+          if(dados[this.id].tipo === "C"){
+            this.saldo = this.saldo + dados[this.id].valor
+          }else{
+            this.saldo = this.saldo - dados[this.id].valor
+          }
         }
       })
       .catch(erro => {
