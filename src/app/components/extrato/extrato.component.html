@@ -18,11 +18,11 @@
     </tr> 
     </tbody>  
     <tbody>   
-      <tr>
+      <tr class="saldo">
         <th ></th>
         <td></td>
-        <td>Salto atual: </td>
-        <td>{{this.saldo}}</td>
+        <td>SALDO ATUAL: </td>
+        <td>{{this.saldo | currency:'BRL':true:'1.2-2' | espacoMoeda}} C</td>
       </tr>       
     </tbody>
   </table>

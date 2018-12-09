@@ -7,6 +7,9 @@
 .titulo{
     margin-bottom: 30px;
 }
+.saldo{
+    color: red;
+}
 .contanier-espaco{
 height: 30px;    
 }
