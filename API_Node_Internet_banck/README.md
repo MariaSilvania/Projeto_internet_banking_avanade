@@ -1,3 +1,3 @@
-# api Node Internet Bancking
+# API Node Internet Bancking
 
 use npm i && node server.js to start
