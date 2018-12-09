@@ -8,7 +8,8 @@ import { BancoService } from 'src/app/services/banco.service';
   styleUrls: ['./extrato.component.css']
 })
 export class ExtratoComponent implements OnInit {
-
+  id: number = 0
+  saldo: number = 0
   bancos: Ibanco[] = []
   constructor(private bancoService: BancoService) { }
 
@@ -16,6 +17,12 @@ export class ExtratoComponent implements OnInit {
     this.bancoService.getBancos()
       .then(dados => {
         this.bancos = dados
+        for(var i = 0; i < dados.length; i++){
+          this.id = dados[i].id
+        
+        this.saldo = this.saldo + dados[this.id].valor
+        
+        }
       })
       .catch(erro => {
         console.log(erro);

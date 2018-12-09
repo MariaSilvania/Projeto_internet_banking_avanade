@@ -14,24 +14,51 @@ server.use(function (req, res, next) {
 let listaExtrato = [
 	{
 		"id": 1,
-		"data": "2010-12-07",
-		"doc": "0000",
+		"data": "2018-12-01",
+		"doc": "000000",
 		"historico": "saldo anterior",
-		"valor": 0.00
+		"valor": 0.00,
+		"tipo":""
 	},
 	{
 		"id": 2,
-		"data": "2010-12-10",
-		"doc": "0000",
-		"historico": "Saldo",
-		"valor": 190.00
+		"data": "2018-12-01",
+		"doc": "000000",
+		"historico": "DP DINH AG",
+		"valor": 190.00,
+		"tipo": "C"
 	},
 	{
 		"id": 3,
-		"data": "2010-11-10",
+		"data": "2018-12-02",
+		"doc": "198760",
+		"historico": "DEB PAG",
+		"valor": 26.15,
+		"tipo": "D"
+	},
+	{
+		"id": 4,
+		"data": "2018-12-05",
+		"doc": "221137",
+		"historico": "DOC ELET",
+		"valor": 100.00,
+		"tipo": "C"
+	},
+	{
+		"id": 5,
+		"data": "2018-12-09",
+		"doc": "781075",
+		"historico": "PAG FONE",
+		"valor": 44.88,
+		"tipo": "D"
+	},
+	{
+		"id": 6,
+		"data": "2018-12-10",
 		"doc": "198600",
-		"historico": "Rem basica",
-		"valor": 100.00
+		"historico": "DE DIN LOT",
+		"valor": 300.00,
+		"tipo": "C"
 	}
 ];
 

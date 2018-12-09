@@ -10,13 +10,21 @@
       <th scope="col">Valor</th>
   </thead>
   <tbody>
-    <tr *ngFor="let item of bancos" >
+    <tr  *ngFor="let item of bancos">
       <th scope="row">{{ item.data | date:'dd/MM/yyyy'}}</th>
       <td>{{ item.doc }}</td>
       <td>{{ item.historico }}</td>
-      <td>{{ item.valor| currency:'BRL':true:'1.2-2' | espacoMoeda }}</td>
-    </tr>       
-  </tbody>
+      <td>{{ item.valor | currency:'BRL':true:'1.2-2' | espacoMoeda }} {{item.tipo}}</td>
+    </tr> 
+    </tbody>  
+    <tbody>   
+      <tr>
+        <th ></th>
+        <td></td>
+        <td>Salto atual: </td>
+        <td>{{this.saldo}}</td>
+      </tr>       
+    </tbody>
   </table>
   <ng-template #nottable>
   <h1 class="h1">Sem Histórico</h1>

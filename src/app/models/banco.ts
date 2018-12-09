@@ -6,6 +6,7 @@ export interface Ibanco {
     doc: number
     historico: string
     valor: number
+    tipo: string
 }
 
 export class Banco implements Ibanco {
@@ -15,6 +16,7 @@ export class Banco implements Ibanco {
        public doc: number,
        public historico: string,
        public valor: number,
+       public tipo: string,
    ) { }
    
 }
