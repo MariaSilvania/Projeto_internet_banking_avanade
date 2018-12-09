@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Ibanco } from 'src/app/models/banco';
+import { BancoService } from 'src/app/services/banco.service';
 
 @Component({
   selector: 'app-home',
@@ -21,9 +23,28 @@ export class HomeComponent implements OnInit {
   showPoupanca: boolean = false
   showOcultarImgPoupanca: boolean = true
 
-  
+  id: number = 0
+  saldo: number = 0
+  bancos: Ibanco[] = []
+  constructor(private bancoService: BancoService) { }
+
   ngOnInit() {
-    
+    this.bancoService.getBancos()
+      .then(dados => {
+        this.bancos = dados
+        for(var i = 0; i < dados.length; i++){
+          this.id = dados[i].id
+          if(dados[this.id].tipo === "C"){
+            this.saldo = this.saldo + dados[this.id].valor
+          }else{
+            this.saldo = this.saldo - dados[this.id].valor
+          }
+        }
+      })
+      .catch(erro => {
+        console.log(erro);
+      })
+  
   }
 
   ocultarImagInvestimento(investimento) {

@@ -54,6 +54,14 @@ let listaExtrato = [
 	},
 	{
 		"id": 6,
+		"data": "2018-12-09",
+		"doc": "198450",
+		"historico": "DE DIN LOT",
+		"valor": 100.00,
+		"tipo": "C"
+	},
+	{
+		"id": 7,
 		"data": "2018-12-10",
 		"doc": "198600",
 		"historico": "DE DIN LOT",
