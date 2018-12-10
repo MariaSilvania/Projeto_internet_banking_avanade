@@ -39,4 +39,18 @@ background-color: rgb(138, 131, 131);
 color: white;  
 border: none;  
 }
+
+@media (min-width: 768px) and (max-width: 800px) 
+{
+ .cards-6{
+ margin-bottom: 490px;    
+ }    
    
+}
+
+@media (min-width: 767px) and (max-width: 768px) 
+{
+    .cards-6{
+        margin-bottom: 240px;    
+        }    
+}
