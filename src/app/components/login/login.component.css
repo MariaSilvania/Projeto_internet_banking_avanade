@@ -43,3 +43,38 @@
    border-radius:8px;     
    }
    
+   @media (max-width: 360px) 
+   {
+   .containar-login{
+         height: 70vh;  
+       }
+   
+   }
+   
+    @media (min-width: 362px) and (max-width: 376px) 
+   {
+      .containar-login{
+         height: 80vh;  
+       }
+   }
+   
+   @media (min-width: 377px) and (max-width: 414px) 
+   {
+      .containar-login{
+         height: 80vh;  
+       }
+   }
+   
+   @media (min-width: 768px) and (max-width: 800px) 
+   {
+      .containar-login{
+         height: 80vh;     
+       }
+   }
+   
+   @media (min-width: 767px) and (max-width: 768px) 
+   {
+      .containar-login{
+         height: 75vh;  
+       }
+   }  
