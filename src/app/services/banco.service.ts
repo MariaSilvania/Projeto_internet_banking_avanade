@@ -9,7 +9,12 @@ export class BancoService {
   url: string = 'http://localhost:3000/api/'
 
   constructor(private http: HttpClient) { }
+  
   getBancos(){
     return this.http.get<Ibanco[]>(this.url + 'extratos').toPromise()
   }
+    //Salvar transferencia
+    postBanco(banco: Ibanco){
+      return this.http.post(this.url + "extrato", banco).toPromise()
+    }
 }

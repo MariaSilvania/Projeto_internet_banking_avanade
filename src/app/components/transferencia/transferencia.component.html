@@ -15,8 +15,8 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-between">
-          <input for="instituicao" class='instituição' type="text" placeholder="instituição" name="instituicao" [(ngModel)]="transacao.instituicao">
-          <select name="tipo_transacao" [(ngModel)]="transacao.tipoTransacao">
+          <input for="instituicao" class='instituição' type="text" placeholder="instituição">
+          <select>
             <option value="TED">TED p/mesma titularidade</option>
             <option value="DOC">DOC p/mesma titularidade</option>
             <option value="TED">TED titularidade diferente</option>
@@ -26,35 +26,43 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-between">
-          <input class='agencia' type="text" placeholder="agência" name="agencia" [(ngModel)]="transacao.agencia">
-          <input class='conta' type="text" placeholder="Conta - digito" name="conta" [(ngModel)]="transacao.conta">
+          <input class='agencia' type="text" placeholder="agência">
+          <input class='conta' type="text" placeholder="Conta - digito">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class='valor-transferencia' type="text" placeholder="Valor a ser transferido" name="valor" [(ngModel)]="transacao.valor">
+          <input class='valor-transferencia' type="text" placeholder="Valor a ser transferido" name="valor" [(ngModel)]="banco.valor">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class='identificao-transferencia' type="text" placeholder="Identificação da transferência" name="identificacao" [(ngModel)]="transacao.identificacao">
+          <input class='identificao-transferencia' type="text" placeholder="Identificação da transferência">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <input class="mr-2" type="radio" name="transf-hoje" value="transf-hoje" checked  name="data" [(ngModel)]="transacao.data"> Tranferir hoje<br>
+          <p>Data da transferência  </p>
+          <input class="input-data" type="date" value="transf-hoje" id="data" name="data" [(ngModel)]="banco.data"
+      #data="ngModel" required>
         </div>
       </div>
       <div class="row">
+          <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
+            <p>NR. DOC    </p>
+            <input class='nr-doc' type="text" name="doc" [(ngModel)]="banco.doc">
+          </div>
+        </div>
+      <!-- <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
           <input class="mr-2" type="radio" name="agendar-transf" value="agendar-transf"> Agendar transferência
           p/
           <input class=" input-data ml-2" type="text" name="" placeholder="dd/mm/aaaa"> <br>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-12 col-md-12 col-sm-12 mb-3 d-flex justify-content-start">
-          <p><input id="repetir_transf" class="mr-2" type="checkbox" name="salvar-conta" name="repetirTransacao" [(ngModel)]="transacao.repetirTransacao">Deseja que esta transferência se repita
+          <p><input id="repetir_transf" class="mr-2" type="checkbox" name="salvar-conta">Deseja que esta transferência se repita
             automaticamente nos próximos meses?</p>
         </div>
       </div>

@@ -11,6 +11,7 @@ font-weight: bold;
 .conta,
 .identificao-transferencia,
 .valor-transferencia,
+.nr-doc,
 .input-data {
 border: none;
 border-bottom: 2px solid gray;

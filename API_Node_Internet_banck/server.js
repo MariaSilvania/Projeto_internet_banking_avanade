@@ -70,12 +70,29 @@ let listaExtrato = [
 	}
 ];
 
-
 server.get('/api/extratos', function (req, res) {
 	console.log('get')
 	res.json(listaExtrato);
 });
 
+server.post('/api/extrato', function (req, res) {
+	console.log('post', req.body)
+
+	let last = listaExtrato[listaExtrato.length - 1]
+
+	transferencia = {
+		"id": last.id + 1,
+		"data": req.body.data,
+		"doc": "DOC ELET",
+		"valor": req.body.valor,
+		"tipo": "D",
+	}
+	console.log(transferencia)
+
+	listaExtrato.push(transferencia)
+
+	res.json(listaExtrato);
+});
 server.listen(3000, function () {
 	console.log("NEW API - port " + 3000)
 });
