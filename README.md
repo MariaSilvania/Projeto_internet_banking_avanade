@@ -15,6 +15,9 @@ Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angul
 * Responsividade 
 * Controle de concorrência na persistência dos objetos
 
+## Desenvolvido por:
+* Beatriz Justiniano (https://github.com/beatriz1006j)
+
 
 ## Servidor
 
