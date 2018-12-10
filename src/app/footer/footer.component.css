@@ -11,8 +11,19 @@
 {
     .page-footer{
     font-size: 15px; 
+    
   }  
   h5{
    font-size: 20px;   
+  }
+  .container{
+    display: none;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 414px) 
+{
+  .container{
+    display: none;
   }
 }
