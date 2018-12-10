@@ -1,6 +1,6 @@
-# Beer
+# Orange Bank 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angular-cli) versão 4 e 5. 
 
 ## Development server
 
