@@ -1,6 +1,20 @@
 # Orange Bank 
 
-Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angular-cli) versão 4 e 5. 
+Projeto proposto pela Avanade Brasil para desenvolvimento de um Internet Banking.
+
+Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angular-cli) versão 4 e 5; Javascript, HTML5, CSS e Bootstrap. 
+
+## Requisitos
+
+Alta Performance 
+Alta Disponibilidade 
+Testes Automatizados 
+Segurança 
+Logs/Rastreabilidade 
+Tratamento de Exceção 
+Responsividade 
+Controle de concorrência na persistência dos objetos
+
 
 ## Servidor
 
