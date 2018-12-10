@@ -2,9 +2,9 @@
 
 Projeto proposto pela Avanade Brasil para desenvolvimento de um Internet Banking.
 
-## LInguagens 
+## Linguagens 
 
-Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angular-cli) versão 4 e 5; Javascript, HTML5, CSS e Bootstrap. 
+Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angular-cli) versão 4 e 5; Javascript, HTML5, CSS e Bootstrap, Node.js, Npm, Mongoose 
 
 ## Requisitos
 
