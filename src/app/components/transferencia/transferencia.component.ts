@@ -51,7 +51,7 @@ export class TransferenciaComponent implements OnInit {
     if(form.valid){
       this.bancoService.postBanco(this.banco)
         .then(dados => {
-          alert(dados)
+          alert("Transferencia efetuada com sucesso")
           this.router.navigate(['/home'])
         })
         .catch(err => {
