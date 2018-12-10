@@ -6,14 +6,14 @@ Esse projeto foi desenvolvido em  [Angular CLI](https://github.com/angular/angul
 
 ## Requisitos
 
-*Alta Performance 
-*Alta Disponibilidade 
-*Testes Automatizados 
-*Segurança 
-*Logs/Rastreabilidade 
-*Tratamento de Exceção 
-*Responsividade 
-*Controle de concorrência na persistência dos objetos
+* Alta Performance 
+* Alta Disponibilidade 
+* Testes Automatizados 
+* Segurança 
+* Logs/Rastreabilidade 
+* Tratamento de Exceção 
+* Responsividade 
+* Controle de concorrência na persistência dos objetos
 
 
 ## Servidor
