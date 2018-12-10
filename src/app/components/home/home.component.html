@@ -17,8 +17,9 @@
   <div class="cards-2 col-12 col-sm-6 col-md-4">
     <div class="extrato">
       <a [routerLink]="['/extrato']">
-      <button class="btn btn-light" (click)='mostrarExtrato()' (click)='ocultarImgExtrato()'>{{showExtrato ? "OCULTAR"
-        :"VER EXTRATO"}}</button></a>
+        <button class="btn btn-light" (click)='mostrarExtrato()' (click)='ocultarImgExtrato()'>{{showExtrato ?
+          "OCULTAR"
+          :"VER EXTRATO"}}</button></a>
       <div class="mostrar-extrato" *ngIf=showExtrato>
         <div class="button-extrato d-flex justify-content-center">
         </div>
@@ -34,8 +35,8 @@
       <a [routerLink]="['/transferencia']">
         <button class="btn btn-light" (click)='mostrarTransferencia()' (click)='ocultaImgTransferencia()'>
           {{showTranferencia
-        ? "OCULTAR" :"VER
-        TRANSFERÊNCIA"}}</button></a>
+          ? "OCULTAR" :"VER
+          TRANSFERÊNCIA"}}</button></a>
       <div class="mostrar-transferencia" *ngIf=showTranferencia>
       </div>
       <div class="d-flex justify-content-center mt-3">
@@ -51,14 +52,14 @@
         "OCULTAR" :"VER
         EMPRESTIMOS"}}</button>
       <div class="mostrar-emprestimo" *ngIf=showEmprestimo>
-          <p>Procurando o empréstimo que cabe no seu bolso? 
-              Taxas de juros a partir de 1,9% ao mês.</p>
-          <button  class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
+        <p>Procurando o empréstimo que cabe no seu bolso?
+          Taxas de juros a partir de 1,9% ao mês.</p>
+        <button class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
       </div>
       <div class="d-flex justify-content-center mt-5">
         <img src="https://dumielauxepices.net/sites/default/files/money-clipart-book-689278-5562946.png" style="height:80px"
           alt="" *ngIf=showOcultarImgEmprestimo>
-        </div>
+      </div>
     </div>
   </div>
   <div class="cards-5 col-12 col-sm-6 col-md-4">
@@ -66,9 +67,9 @@
       <button class="btn btn-light" (click)='mostrarPoupanca()' (click)='ocultarImgPoupanca()'>{{showPoupanca ?
         "OCULTAR" :"POUPANÇA"}}</button>
       <div class="mostrar-poupanca" *ngIf=showPoupanca>
-        <p>A poupança da Caixa é a opção de investimento mais segura, acessível e adequada a todos os perfis.
+        <p>A poupança é a opção de investimento mais segura, acessível e adequada a todos os perfis.
         </p>
-        <button  class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
+        <button class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
       </div>
       <div class="d-flex justify-content-center mt-4">
         <img src="https://img.clipartxtras.com/6fb940faca17aff7e17b372c702eb771_saving-money-clipart-black-and-white-clipartxtras-saving-money-clipart-black-and-white_588-599.png"
@@ -80,10 +81,10 @@
       <button class="btn btn-light" (click)='mostrarInvestimento()' (click)='ocultarImagInvestimento()'>{{showInvestimento
         ? "OCULTAR" :"VER
         INVESTIMENTOS"}}</button>
-      <div class="mostrar-investimentos" *ngIf=showInvestimento> 
+      <div class="mostrar-investimentos" *ngIf=showInvestimento>
         <p>MELHOR PARA O INVESTIDOR
           Quase 40 instituições já zeraram taxa para investir no Tesouro Direto.</p>
-          <button  class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
+        <button class="btn btn-primary" (click)='saibaMais()'>Saiba mais...</button>
       </div>
       <div class="d-flex justify-content-center mt-5">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOFXpVLzECgN-kCfhfGJsWs-g8B6ldnws2T6I2G5uRvfC7valUQ"
